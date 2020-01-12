@@ -277,6 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a3fcbf1884efe4e99833ad10c0ae0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MagnetObject: {fileID: 1463137666547203500, guid: 09acb3e30ccdba44f825a716265c9437,
+    type: 3}
+  MovingSpeed: 0.02
 --- !u!1 &1486681703
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,14 +320,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486681703}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4315cb0a1a50cfe449d10a3445078efd, type: 3}
+  m_Script: {fileID: 11500000, guid: f87ff39f028113243b28f72668406ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   childPrefab: {fileID: 8247051538395823372, guid: 8185c22f06f19804ba7c13b576b708d6,
     type: 3}
   position: {x: 0, y: 2, z: 0}
-  step: {x: 0.1, y: 0.5, z: 0}
-  instances: 5
+  step: {x: 0, y: 0.3, z: 0}
+  instances: 9999
 --- !u!1 &2128763455
 GameObject:
   m_ObjectHideFlags: 0
