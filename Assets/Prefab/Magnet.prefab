@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5703953382080268994}
   - component: {fileID: 3944426242176177890}
+  - component: {fileID: -7483543130996235737}
+  - component: {fileID: 1767194334371660704}
   m_Layer: 0
   m_Name: Magnet
-  m_TagString: Untagged
+  m_TagString: Magnet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463137666547203500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 2.77, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +82,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-7483543130996235737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463137666547203500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b92511cdca2614684eaf142d7ef938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MagnetRange: 0.5
+  clrEnabled: {r: 0.69803923, g: 0.6369166, b: 0.5647059, a: 1}
+  clrDisabled: {r: 0.6037736, g: 0.3218227, b: 0.3218227, a: 1}
+--- !u!58 &1767194334371660704
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463137666547203500}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
