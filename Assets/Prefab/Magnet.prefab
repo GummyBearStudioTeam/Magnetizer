@@ -94,8 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b92511cdca2614684eaf142d7ef938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MagnetRange: 0.5
-  clrEnabled: {r: 0.69803923, g: 0.6369166, b: 0.5647059, a: 1}
+  MagnetRange: 1
+  MagnetStrength: 3
+  clrEnabled: {r: 0.44181514, g: 0.6698113, b: 0.3949359, a: 1}
   clrDisabled: {r: 0.6037736, g: 0.3218227, b: 0.3218227, a: 1}
 --- !u!58 &1767194334371660704
 CircleCollider2D:
