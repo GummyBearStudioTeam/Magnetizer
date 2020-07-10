@@ -6,6 +6,7 @@ public class MagnetController : MonoBehaviour
 {
     SpriteRenderer spriteComponent;
     public float MagnetRange;
+    public float MagnetStrength;
     public Color clrEnabled, clrDisabled;
 
     bool isEnabled() {
@@ -17,16 +18,19 @@ public class MagnetController : MonoBehaviour
     }
 
     void pullPoints() {
+
         if (!isEnabled())
             return;
+
 		Collider2D[] items = Physics2D.OverlapCircleAll(transform.position, effectRange());
-		Vector2 direction;
+		Vector2 direction, force;
 		foreach (Collider2D i in items)
 		{
 			if (i.CompareTag("PlayerPoint"))
 			{
 				direction = transform.position - i.transform.position;
-				i.attachedRigidbody.AddForce(MagnetRange * direction / Mathf.Pow(1 + direction.magnitude, 2), ForceMode2D.Impulse);
+                force = MagnetStrength * direction / Mathf.Pow(1 + direction.magnitude, 2);
+				i.attachedRigidbody.AddForce(force, ForceMode2D.Impulse);
 			}
 		}
 	}
